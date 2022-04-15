@@ -1,0 +1,116 @@
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bootstrap Visualization Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="Resources/Formatting/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="Resources/Formatting/styles.css" media="screen">
+
+  </head>
+
+  <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto">
+                  <span class="visually-hidden"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="data.html">Data</a>
+                </li>
+                <li class="nav-item">
+                </li>
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01">Plots
+                      <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="Visualization Pages/temp.html">Temperature</a></li>
+                      <li><a href="Visualization Pages/humidity.html">Humidity</a></li>
+                      <li><a href="Visualization Pages/cloudiness.html">Cloudiness</a></li>
+                      <li><a href="Visualization Pages/wind.html">Wind</a></li>
+                    </ul>
+                  </div>
+        </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+    <div class="container">
+      <!--section class="row"-->
+        <div class="col-md-9">
+          <article class="description-content">
+            <h1 class="description-header">Summary: Latitude vs. X</h1>
+            <hr class="description-hr"/>
+            <img src="Images/City Latitude vs. Max Temperature.png" alt="" id="description-image"/>
+            <p>Data was pulled from the OpenWeatherMap API to demonstrate how proximity to the equator impacts weather.</p>
+          </article>
+        </div>
+        <div class="col-md-9">
+
+          <!-- Start of Visualizations imageNav Area -->
+          <section id="imageNav-area">
+            <div class="imageNav-content">
+              <h2 class="imageNav-header">Visualizations</h2>
+              <hr />
+              <div id="images">
+                <a href="Visualization Pages/temp.html"><img src="Images/City Latitude vs. Max Temperature.png" alt="Latitude vs. Max Temperature" class="imageNav-photo" width="216" height="144"></a>
+                <a href="Visualization Pages/humidity.html"><img src="Images/City Latitude vs. Humidity.png" alt="Latitude vs. Humidity" class="imageNav-photo" width="216" height="144"></a>
+                <a href="Visualization Pages/cloudiness.html"><img src="Images/City Latitude vs. Cloudiness.png" alt="Latitude vs. Cloudiness" class="imageNav-photo" width="216" height="144"></a>
+                <a href="Visualization Pages/wind.html"><img src="Images/City Latitude vs. Wind Speed.png" alt="Latitude vs. Wind Speed" class="imageNav-photo" width="216" height="144"></a>
+              </div>
+            </div>
+          </section>
+          <!-- End of imageNav Visualizations -->
+
+        </div>
+      </section>
+    </div>
+    <!-- End of container -->
+
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+</html>
